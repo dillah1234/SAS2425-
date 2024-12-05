@@ -25,11 +25,11 @@ export const cardData = [
   ];
 
   const Card = ({ title, description, image, buttonText }) => (
-    <div style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '16px', maxWidth: '300px' }}>
+    <div className="card" style={{ border: '1px solid #ddd', borderRadius: '8px', padding: '16px', maxWidth: '300px' }}>
       <img src={image} alt={title} style={{ width: '100%', borderRadius: '8px' }} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <button style={{ padding: '8px 16px', background: '#007bff', color: '#fff', border: 'none', borderRadius: '4px' }}>
+      <button style={{ padding: '8px 16px', background: '#007bff', color: 'black', border: 'none', borderRadius: '4px' }}>
         {buttonText}
       </button>
     </div>
